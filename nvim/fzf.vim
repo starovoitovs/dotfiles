@@ -1,5 +1,6 @@
 " === Plug fzf ===
 
+let g:fzf_layout = { 'window': 'enew' }
 let g:fzf_preview_window = 'right:60%'
 let g:fzf_tags_command = 'ctags --recurse --options=.ctags'
 

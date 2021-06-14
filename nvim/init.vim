@@ -11,7 +11,9 @@ Plug 'antoinemadec/coc-fzf'
 Plug 'jpalardy/vim-slime'
 Plug 'tpope/vim-commentary'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'preservim/nerdtree'
 Plug 'vim-scripts/Rename2'
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 source ~/dotfiles/nvim/theme.vim

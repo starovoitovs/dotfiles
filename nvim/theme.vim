@@ -2,7 +2,7 @@
 
 set termguicolors
 syntax on
-colorscheme slate
+colorscheme one
 set background=dark
 
 " call one#highlight('Normal', '', '#252525', 'none')
