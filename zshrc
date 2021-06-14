@@ -31,5 +31,7 @@ for zsh_file (~/dotfiles/zsh/*.zsh) source $zsh_file
 export PATH="$PATH:$HOME/.rvm/bin"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-source ~/.zshrc.local
 
+if [ -f ~/.zshrc.local ]; then
+    source ~/.zshrc.local
+fi

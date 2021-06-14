@@ -1,5 +1,6 @@
 call plug#begin(stdpath('data') . '/plugged')
 Plug 'junegunn/fzf'
+Plug 'junegunn/seoul256.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'rakr/vim-one'
 Plug 'itchyny/lightline.vim'
@@ -8,6 +9,7 @@ Plug 'antoinemadec/coc-fzf'
 Plug 'josa42/vim-lightline-coc'
 Plug 'fannheyward/coc-pyright'
 Plug 'jpalardy/vim-slime'
+Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 call plug#end()
 
 source ~/dotfiles/nvim/theme.vim
