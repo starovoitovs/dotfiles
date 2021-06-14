@@ -37,5 +37,10 @@ set gdefault                      " replace all occurences of the line
 
 set cmdwinheight=12               " Larger console window
 
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
 " save edit position
 autocmd BufReadPost * if @% !~# '\.git[\/\\]COMMIT_EDITMSG$' && line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif 
