@@ -8,8 +8,6 @@ setopt SHARE_HISTORY
 export EDITOR='nvim'
 export GIT_EDITOR="nvim -u ~/dotfiles/nvim/gitcommit.init.vim"
 
-export MANPAGER="sh -c 'col -bx | bat -l man -p --theme=default'"
-
 # autocompletion
 autoload -Uz compinit
 compinit

@@ -7,9 +7,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'antoinemadec/coc-fzf'
 Plug 'josa42/vim-lightline-coc'
-Plug 'fannheyward/coc-pyright'
 Plug 'jpalardy/vim-slime'
-Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 call plug#end()
 
 source ~/dotfiles/nvim/theme.vim
