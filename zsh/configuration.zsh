@@ -17,3 +17,6 @@ zstyle ':completion:*'  matcher-list 'm:{a-z}={A-Z}'
 
 # complete sudo commands
 zstyle ':completion::complete:*' gain-privileges 1
+
+# ipython history
+export IPYTHONDIR=/tmp

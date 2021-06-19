@@ -1,36 +1,23 @@
 #!/bin/sh
 
-realpath() {
-    [[ $1 = /* ]] && echo "$1" || echo "$PWD/${1#./}"
-}
+mkdir -p ${HOME}/.local
 
-# Absolute path to this script
-SCRIPT=`realpath "$0"`
 
-# Absolute path this script is in
-SCRIPTPATH=`dirname $SCRIPT`
+# install nvim
 
-echo $SCRIPT
-echo $SCRIPTPATH
-echo "Linking config files from $SCRIPTPATH"
+curl -L https://github.com/neovim/neovim/releases/latest/download/nvim.appimage -o ${HOME}/.local/bin/nvim
+chmod u+x ${HOME}/.local/bin/nvim
 
-link () {
-    FROM="$SCRIPTPATH/../$1"
-    TO=$2
 
-    printf "ln -s %s %s\n" $FROM $TO
+# install ag
 
-    rm $TO
-    ln -fs $FROM $TO
-}
+wget https://geoff.greer.fm/ag/releases/the_silver_searcher-2.2.0.tar.gz
+tar xzvf the_silver_searcher-2.2.0.tar.gz
+cd the_silver_searcher-2.2.0
 
-mkdir -p ~/.config
+./configure --prefix=${HOME}/.local
+make
+make install
 
-link zshrc ~/.zshrc
-link oh-my-zsh ~/.oh-my-zsh
-link scripts ~/.scripts
-link gitconfig ~/.gitconfig
-link tmux.conf ~/.tmux.conf
-link nvim ~/.config/nvim
-curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-mkdir ~/.config/nvim/undodir
+
+
