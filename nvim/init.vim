@@ -7,7 +7,6 @@ Plug 'rakr/vim-one'
 Plug 'itchyny/lightline.vim'
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'josa42/vim-lightline-coc'
-Plug 'antoinemadec/coc-fzf'
 Plug 'jpalardy/vim-slime'
 Plug 'tpope/vim-commentary'
 Plug 'terryma/vim-multiple-cursors'
@@ -15,6 +14,7 @@ Plug 'preservim/nerdtree'
 Plug 'vim-scripts/Rename2'
 Plug 'ryanoasis/vim-devicons'
 Plug 'numirias/semshi'
+Plug 'antoinemadec/coc-fzf'
 call plug#end()
 
 source ~/dotfiles/nvim/theme.vim
