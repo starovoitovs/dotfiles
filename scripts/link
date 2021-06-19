@@ -1,0 +1,36 @@
+#!/bin/sh
+
+realpath() {
+    [[ $1 = /* ]] && echo "$1" || echo "$PWD/${1#./}"
+}
+
+# Absolute path to this script
+SCRIPT=`realpath "$0"`
+
+# Absolute path this script is in
+SCRIPTPATH=`dirname $SCRIPT`
+
+echo $SCRIPT
+echo $SCRIPTPATH
+echo "Linking config files from $SCRIPTPATH"
+
+link () {
+    FROM="$SCRIPTPATH/../$1"
+    TO=$2
+
+    printf "ln -s %s %s\n" $FROM $TO
+
+    rm $TO
+    ln -fs $FROM $TO
+}
+
+mkdir -p ~/.config
+
+link zshrc ~/.zshrc
+link oh-my-zsh ~/.oh-my-zsh
+link scripts ~/.scripts
+link gitconfig ~/.gitconfig
+link tmux.conf ~/.tmux.conf
+link nvim ~/.config/nvim
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+mkdir ~/.config/nvim/undodir
