@@ -5,19 +5,26 @@ mkdir -p ${HOME}/.local
 
 # install nvim
 
-curl -L https://github.com/neovim/neovim/releases/latest/download/nvim.appimage -o ${HOME}/.local/bin/nvim
-chmod u+x ${HOME}/.local/bin/nvim
+if ! [ -x "$(command -v nvim)" ]; then
+    curl -L https://github.com/neovim/neovim/releases/latest/download/nvim.appimage -o ${HOME}/.local/bin/nvim
+    chmod u+x ${HOME}/.local/bin/nvim
+fi
 
 
 # install ag
 
-wget https://geoff.greer.fm/ag/releases/the_silver_searcher-2.2.0.tar.gz
-tar xzvf the_silver_searcher-2.2.0.tar.gz
-cd the_silver_searcher-2.2.0
+if ! [ -x "$(command -v ag)" ]; then
 
-./configure --prefix=${HOME}/.local
-make
-make install
+    wget https://geoff.greer.fm/ag/releases/the_silver_searcher-2.2.0.tar.gz
+    tar xzvf the_silver_searcher-2.2.0.tar.gz
+    cd the_silver_searcher-2.2.0
 
+    ./configure --prefix=${HOME}/.local
+    make
+    make install
 
+    cd ..
+    rm -rf the_silver_searcher-2.2.0
+
+fi
 

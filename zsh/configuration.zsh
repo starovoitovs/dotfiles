@@ -20,3 +20,6 @@ zstyle ':completion::complete:*' gain-privileges 1
 
 # ipython history
 export IPYTHONDIR=/tmp
+
+# manpager
+export MANPAGER="col -b | nvim -MR - "

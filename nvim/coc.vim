@@ -1,5 +1,4 @@
 let g:coc_global_extensions = [
-      \'coc-markdownlint',
       \'coc-highlight',
       \'coc-vetur',
       \'coc-go',
