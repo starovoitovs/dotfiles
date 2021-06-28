@@ -2,7 +2,11 @@ nmap <silent> <leader><cr> :nohl<cr>
 nmap <silent> <leader>e :History<cr>
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
-nnoremap <leader>n :NERDTreeToggle<CR>
+nnoremap <leader>nn :NERDTreeToggle<CR>
+nnoremap <leader>nf :NERDTreeFind<CR>
+nnoremap <leader>ru ggVG<C-c><C-c>
+nnoremap d "_d
+vnoremap d "_d
 
 " tabs
 noremap <leader>1 1gt

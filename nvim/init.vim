@@ -15,6 +15,7 @@ Plug 'vim-scripts/Rename2'
 Plug 'ryanoasis/vim-devicons'
 Plug 'numirias/semshi'
 Plug 'antoinemadec/coc-fzf'
+Plug 'junegunn/vim-peekaboo'
 call plug#end()
 
 source ~/dotfiles/nvim/theme.vim
