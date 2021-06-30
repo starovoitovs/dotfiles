@@ -23,3 +23,6 @@ export IPYTHONDIR=/tmp
 
 # manpager
 export MANPAGER="col -b | nvim -MR - "
+
+# terminal colors
+export TERM=xterm-256color

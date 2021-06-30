@@ -4,7 +4,7 @@ vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 nnoremap <leader>nn :NERDTreeToggle<CR>
 nnoremap <leader>nf :NERDTreeFind<CR>
-nnoremap <leader>ru ggVG<C-c><C-c>
+nmap <leader>ru ggVG<C-c><C-c><C-o>
 nnoremap d "_d
 vnoremap d "_d
 
