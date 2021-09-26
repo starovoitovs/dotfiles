@@ -22,7 +22,7 @@ zstyle ':completion::complete:*' gain-privileges 1
 export IPYTHONDIR=/tmp
 
 # manpager
-export MANPAGER="col -b | nvim -MR - "
+export MANPAGER="nvim -c 'set ft=man' -"
 
 # terminal colors
 export TERM=xterm-256color

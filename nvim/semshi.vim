@@ -1,6 +1,6 @@
 hi def semshiLocal           ctermfg=209 guifg=#f07199
 hi def semshiGlobal          ctermfg=214 guifg=#97dbbe
-hi def semshiImported        ctermfg=214 guifg=#f0a8c7
+hi def semshiImported        ctermfg=214 guifg=#f0a8c7 cterm=bold gui=bold
 hi def semshiParameter       ctermfg=75  guifg=#bc89c9
 hi def semshiParameterUnused ctermfg=117 guifg=#bd93f9 cterm=underline gui=underline
 hi def semshiFree            ctermfg=218 guifg=#d1b0cc
