@@ -1,6 +1,6 @@
 #!/bin/sh
 
-mkdir -p ${HOME}/.local
+mkdir -p ${HOME}/.local/bin/nvim
 
 
 # install nvim
