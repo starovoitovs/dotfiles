@@ -13,7 +13,6 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'preservim/nerdtree'
 Plug 'vim-scripts/Rename2'
 Plug 'ryanoasis/vim-devicons'
-Plug 'numirias/semshi'
 Plug 'antoinemadec/coc-fzf'
 Plug 'junegunn/vim-peekaboo'
 call plug#end()
@@ -25,5 +24,4 @@ source ~/dotfiles/nvim/plugs.vim
 source ~/dotfiles/nvim/fzf.vim
 source ~/dotfiles/nvim/coc.vim
 source ~/dotfiles/nvim/functions.vim
-source ~/dotfiles/nvim/semshi.vim
 
