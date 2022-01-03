@@ -5,9 +5,9 @@ Run install and link scripts from the home directory.
     # create new pane
     CTRL-B "
     CTRL-B :resize-pane -D 10
-    cd [dir]
     
     # open ipython
+    cd [dir]
     ipython
     
     # go to above pane
