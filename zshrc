@@ -1,5 +1,8 @@
 # DEFAULT_USER=konstantins
 
+# In case zsh has custom installation (like on CentOS), need to specify FPATH manually for zsh functions to work
+export FPATH=${HOME}/.local/share/zsh/5.8.1/functions/
+
 # Path to your oh-my-zsh installation.
 export ZSH=${HOME}/.oh-my-zsh
 
