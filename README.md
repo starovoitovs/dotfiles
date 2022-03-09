@@ -16,3 +16,6 @@ Run install and link scripts from the home directory.
     # send to another pane
     CTRL-C CTRL-C default 1.1
     
+# Install zsh on CentOS
+
+https://jdhao.github.io/2018/10/13/centos_zsh_install_use/
